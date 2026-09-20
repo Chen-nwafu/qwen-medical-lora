@@ -1,0 +1,16 @@
+# 训练 / 评估依赖
+# 用法: pip install -r requirements.txt
+#
+# 说明：本项目在 Windows + CUDA 下开发（8GB 显存），下面只给版本下限，
+# 不锁死具体版本，避免和你的 CUDA 版本冲突。
+
+torch>=2.4
+transformers>=4.56     # 代码中 from_pretrained(dtype=...) 需要该版本以上
+peft>=0.14             # DoRA / PiSSA 支持
+datasets>=3.0
+accelerate>=1.0        # device_map="auto" 依赖
+matplotlib>=3.8
+numpy>=1.26
+
+# 可选：4bit 量化加载（本项目 0.5B 全程 bf16，未使用）
+# bitsandbytes>=0.44

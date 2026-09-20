@@ -1,0 +1,10 @@
+# 统一换行符：仓库内存 LF，检出到 Windows 时自动转 CRLF
+* text=auto eol=lf
+
+# 图片按二进制处理，不做换行转换
+*.png binary
+*.jpg binary
+
+# ipynb 虽是 JSON 但行尾敏感，交给 git 自行判断；
+# 且不计入 GitHub 语言统计（notebook 含大量执行输出，会严重扭曲语言占比）
+*.ipynb -text linguist-documentation
