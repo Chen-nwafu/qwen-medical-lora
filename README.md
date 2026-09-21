@@ -263,8 +263,7 @@ adapter_save/r8_alpha16_qkvogud/adapter_pissa/
 
 ## 🙏 致谢
 
-**参考项目：** [MiniLoRA](https://github.com/SoloCalm/MiniLoRA) —— 本项目 SFT 流程的数据处理与
-训练组织方式参考了该项目。
+**参考项目：** [MiniLoRA](https://github.com/SoloCalm/MiniLoRA) —— 本项目 SFT 流程的数据处理与训练组织方式参考了该项目。
 
 **数据集：** [shibing624/medical](https://huggingface.co/datasets/shibing624/medical)（`finetune` 子集）。
 
